@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+*,*:after, *:before {box-sizing: border-box;}
+a {text-decoration: none;}
+
+body {font-size: 0.8rem;
+      font-family: "Noto Sans KR", sans-serif;
+      background: url(../img/background60.png) no-repeat center fixed;
+      background-size: cover;}
+
+legend {font-size: 1.8rem;
+    color:#030066;
+    text-align: center;
+    margin-bottom: 20px;}      
+
+.join {background:rgba(255,255,255,0.5);
+       width: 500px; height: 620px;
+       position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);
+       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+       padding-top: 40px;}
+
+.joinform {padding: 20px 60px;}
+
+.join ul .joinlist {display: flex; align-items: center;
+                    margin-bottom: 25px;}
+
+.join .joinlist select {width: 210px;height: 28px;
+                        border: #b3b3b3 solid 1px;
+                        padding-left: 5px;
+                        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.15);}
+        
+.join .joinlist label {width: 90px;}
+
+.join .joinlist input {width: 210px;
+                      height: 28px;
+                      border: #b3b3b3 solid 1px;
+                      padding-left: 5px;
+                      box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.15);}
+
+.join span {background: #030066;
+            width: 50px; height: 25px;
+            display: block;
+            text-align: center;
+            margin-left:10px;}
+
+.join span a {font-size: 0.8rem; color: #fff; line-height: 25px; display: block;}
+
+.checklist {margin-top: 120px;
+          font-size: 0.7rem;
+           width: 100%;}
+.checklist>ul {width: 90%; margin: 0 auto;}
+          
+.check1 {font-weight: bold;
+         margin-top: 20px;}
+           
+.button {display: flex;  
+         justify-content: center;
+         gap: 35px;}
+
+.button input {font-size: 0.9rem; color: #fff;
+               width: 150px; height: 30px; line-height: 30px;
+               border: none;
+               margin-top: 100px; margin-bottom: 30px;
+               cursor: pointer;}
+
+.joinbtn {background: #0073CF;}
+.resetbtn {background: #8E8E8E;}
+
+
+
+
+
+
+
+input::placeholder{color:#999;font-size: 13px;}
+input::-webkit-input-placeholder {/*크롬, 사파리*/ color: #999;}

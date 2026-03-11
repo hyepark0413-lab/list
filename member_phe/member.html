@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/member.css">
+   <script src="js/member.js"></script>
+</head>
+<body>
+<form name="member" action="a.php" method="post"  onsubmit="return validateForm()">
+    <fieldset class="join">
+    <fieldset>
+        <legend>회원가입</legend>
+        <ul class="joinform">
+            <li class="joinlist">
+               <label for="selectbox">Title</label>
+               <select id="selectbox">
+                   <option selected>-</option>
+                   <option>Dr</option>
+                   <option>Miss</option>
+                   <option>Mr</option>
+                   <option>Mrs</option>
+                   <option>Ms</option>
+              </select>
+            </li>
+            <li class="joinlist">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </li>
+            <li class="joinlist">
+                <label for="id">Id</label>
+                <input type="text" name="id" id="id">
+                <span><a href="#">Check</a></span>
+            </li>
+            <li class="joinlist">
+                <label for="pwd1">Password</label>
+                <input type="password" name="pass" id="pwd1">
+            </li>
+            <li class="joinlist">
+                <label for="pwd2">Confirm <br> Password</label>
+                <input type="password" name="confirm_pass" id="pwd2">
+            </li>
+            <li class="joinlist">
+                <label for="phone">Phone</label>
+                <input type="tel" maxlength="11" name="tel" id="phone" placeholder="01012345678" pattern="[0-9]{11}" title="하이픈(-)을 제외한 11자리의 전화번호를 입력해주세요">
+            </li>
+            <li class="joinlist">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="christy98@naver.com">
+            </li>
+            <li class="joinlist">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="서울, 대한민국">
+            </li>
+        </ul>    
+    </fieldset>
+
+      <div class="checklist">
+        <ul>
+            <li class="checkbox">
+                <p class="check1">이용 약관</p>
+                <p>가입함으로써 본인은 하얏트 월드의 이용 약관에 동의합니다. 하얏트는 개인정보 보호정책에 따라 귀하의 개인 정보를 수집하고 사용합니다.</p>
+            </li>
+            <li>
+               <p class="check1">개인정보 수집 이용 동의</p>
+               <label for="agree1">
+                  <input type="checkbox" name="checkbox" id="agree1">모두 동의
+                </label>
+            </li>
+            <li class="checkbox">
+                <p class="check1">고유식별정보의 수집 및 이용</p>
+                <label for="agree2">
+                  <input type="checkbox" name="checkbox" id="agree2">본인은 한국어 동의서에 명시된 바에 따라 고유식별정보의 수집 및 이용에 동의합니다.(필수)
+                </label>
+            </li>
+            <li class="checkbox">
+            <p class="check1">일반 개인정보의 제3자 제공</p>
+                <label for="agree3">
+                  <input type="checkbox" name="checkbox" id="agree3">본인은 한국어 동의서에 명시된 바에 따라 개인정보의 제3자 제공에 동의합니다.(필수)
+                </label>
+            </li>
+            <li class="checkbox">
+            <p class="check1">일반 개인정보의 국외 이전</p>
+                <label for="agree4">
+                  <input type="checkbox" name="checkbox" id="agree4">본인은 한국어 동의서에 명시된 바에 따라 글로벌 서비스 제공을 위한 개인정보의국외 이전에 동의합니다.(필수)
+                </label>
+            </li>
+            <li class="checkbox">
+            <p class="check1">KOR-Collection and Use of General Personal Information for Marketing Purpose</p>
+                <label for="agree5">
+                  <input type="checkbox" name="checkbox" id="agree5">Hyatt 및 World of hyatt로 부터 신규 브랜드 소식, 할인, 혜택 등의 마케팅 목적의 개인정보수집 및 이용에 동의합니다.(선택)
+                </label>
+            </li>
+            </ul>
+          </div>
+
+       <section class="button">
+              <input type="submit" value="가입하기" class="joinbtn">
+              <input type="reset" value="돌아가기" class="resetbtn">
+       </section>
+    </fieldset>
+     
+</form>
+   
+    
+
+</body>
+</html>
